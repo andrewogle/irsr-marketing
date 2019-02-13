@@ -2,14 +2,7 @@
 # The humans responsible & technology colophon
 
 # TEAM
-
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
-
-# TECHNOLOGY COLOPHON
-
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    KhariH -- Website Front-end -- https://github.com/K-JHarris/
+    CourtneyB -- Back-end -- https://github.com/cocoitali
+    AndrewO -- App Front-end -- https://github.com/andrewogle
+    RyanC -- Project Manager -- https://github.com/theryanclausen
