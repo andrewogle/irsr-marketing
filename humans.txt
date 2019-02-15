@@ -1,8 +1,8 @@
 # humanstxt.org/
-# The humans responsible & technology colophon
+# The humans responsible
 
 # TEAM
-    KhariH -- Website Front-end -- https://github.com/K-JHarris/
-    CourtneyB -- Back-end -- https://github.com/cocoitali
-    AndrewO -- App Front-end -- https://github.com/andrewogle
-    RyanC -- Project Manager -- https://github.com/theryanclausen
+    KhariH -- UI Design -- https://github.com/K-JHarris/
+    CourtneyB -- Back-end Engineer -- https://github.com/cocoitali
+    AndrewO -- Front-end Engineer -- https://github.com/andrewogle
+    RyanC -- SCRUM Master -- https://github.com/theryanclausen
