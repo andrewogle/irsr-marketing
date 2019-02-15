@@ -1,3 +1,6 @@
+@import "variables.less";
+@import "mixins.less";
+
 .container {
     width: 85%;
     margin: 0 auto;
@@ -6,8 +9,8 @@
 .nav-container {
     display: flex;
     width: 100%;
-    height: 75px;
-    background-color: #212528;
+    height: 65px;
+    background-color: @navgray;
     align-items: center;
     box-shadow: inset  0 -10px 10px -10px black;
 
@@ -17,26 +20,32 @@
         color: white;
         text-decoration: none;
         font-size: 1.4rem;
+        cursor: pointer;
     }
     a:hover {
-        color: #e27689;
+        color: @hoverpink;
     }
 }
 
 body {
-    background-color: #F4F9F9;
+    background-color: @bgwhite;
     font-size: 62.5%; //To Normalize em sizes
     font-family: 'Roboto', sans-serif;
-    background-image: url(/img/lockers.jpg); //Image credit to Moren Hsu at Unsplash https://unsplash.com/@moren
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+header {
+    h1 {
+        .heading();
+    }
 }
 
 .tabs {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 15px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     p {
@@ -46,7 +55,7 @@ body {
 
 .tabs .tab {
     color: #fff;
-    background-color: #212528;
+    background-color: @navgray;
     font-weight: bold;
     padding: 2px 10px;
     font-size: 1rem;
@@ -54,49 +63,100 @@ body {
     width: 100%;
     text-align: center;
     letter-spacing: 1.5px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    border-left: 1px solid white;
-    cursor: pointer;
+    border-top: 1px solid @navgray;
+    border-bottom: 1px solid @navgray;
+    border-left: 1px solid @navgray;
+	 cursor: pointer;
+	 white-space: nowrap;
 }
 
 .tab:hover {
-    color: #e27689;
+    color: @hoverpink;
+    border-top: 1px solid @bgwhite;
+    border-bottom: 1px solid @bgwhite;
+}
+
+.tab:hover:first-of-type{
+	border-left: 1px solid @bgwhite;
+}
+
+.tab:hover:last-of-type{
+	border-right: 1px solid @bgwhite;
 }
 
 .tab:last-of-type {
-    border-right: 1px solid white;
+    border-right: 1px solid @navgray;
 }
 
 .tabs .active-tab {
-    background-color: #F4F9F9;
-    color: #212528;
+    background-color: @bgwhite;
+    color: @navgray;
 }
 
-.about {
+
+.about-card {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    border: 1px solid white;
+    border: 1px solid @navgray;
     display: flex;
-    background-color: #212528;
+    background-color: @bgwhite;
     margin: 0 auto;
-    width: 100%;
+	 width: 100%;
+	 
     .about-text {
-        font-size: 1.1rem;
-        color: #F4F9F9;
-        padding: 11px;
+      .text-content();
+      line-height: 25px;
+		padding-left: 0;
+		margin-bottom: 25px;
+		padding-right: 11px;
     }
+
     .about-img {
-        width: 500px;
-        margin-right: 20px;
-        height: 50%;
-        border-bottom: 1px solid black;
-        padding: 11px 0px 11px 11px;
-    }
+      width: 30%;
+      margin-right: 20px;
+      height: 50%;
+      padding: 11px 0px 11px 11px;
+	 }
+	 .title {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid black;
+		width: 290px;
+    	white-space: nowrap;
+	 }
+
+	 .about-name {
+		.text-content();
+		padding-left: 0;
+		margin-bottom: 7px;
+		font-size: 2rem;
+		font-weight: bold;
+		
+	 }
+
+	 .about-role {
+		.text-content();
+		color: @hoverpink;
+		padding-left: 0;
+		padding-top: 0;
+		font-size: 1.4rem;
+		margin-bottom: 7px;
+	 }
 }
 
-.text-content { //make a mixin for this
-    font-size: 1.5em;
-} 
+.footer {
+    p {
+		font-size: .9rem;
+		text-align: center;
+		padding-top: 17px;
+		color: @bgwhite;
+    }
+    position:absolute;
+    bottom: 0;
+    width:100%;
+    height: 50px;   
+	 background: @navgray;
+	 box-shadow: inset  0 10px 10px -10px black;
+ }
 
 
 @media (max-width: 979px) { //desktop
