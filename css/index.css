@@ -139,6 +139,9 @@ header h1 {
 .about-card .icons i:hover {
   color: #e27689;
 }
+.hidden {
+  display: none;
+}
 .footer {
   position: absolute;
   bottom: 0;
