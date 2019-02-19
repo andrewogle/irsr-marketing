@@ -103,7 +103,7 @@ header {
     margin: 0 auto;
 	 width: 100%;
 	 
-    .about-text {
+    .about-content {
       .text-content(); //establish basic color and size
       line-height: 25px;
 		padding-left: 0;
@@ -121,6 +121,8 @@ header {
 		margin-top: 15px;
 		margin-bottom: 15px;
 		border-bottom: 1px solid black;
+		display: flex;
+		flex-wrap: wrap;
 		width: 290px;
 		 white-space: nowrap;
 	 }
@@ -144,11 +146,12 @@ header {
 	 }
 
 	 .icons {
-		 display: flex;
 		 font-size: 1.5rem;
 		 margin-top: 13px;
+		 height: 20px;
+		 float: right;
 		i {
-			margin-right: 10px;
+			margin-left: 5px;
 			cursor: pointer;
 			height: 20px;
 		}
@@ -170,7 +173,7 @@ header {
 		padding-top: 17px;
 		color: @bgwhite;
     }
-    position:absolute;
+    position:fixed;
     bottom: 0;
     width:100%;
     height: 50px;   
@@ -178,15 +181,48 @@ header {
 	 box-shadow: inset  0 10px 10px -10px black;
  }
 
-
-@media (max-width: 979px) { //desktop
-
+ @media @tablet{
+	.about-text{
+		height: 500px;
+		overflow: auto;
+		margin-top: 10px;
+	}
 }
-  
-@media (max-width: 767px) { //tablet
 
-}
-  
-@media (max-width: 480px) { //phone
+@media @mobile{
+	.container {
+		max-width: 480px;
+	}
 
+	.tabs {
+		flex-direction: column;
+		.tab {
+			border: 1px solid @navgray;
+			width: 371.547px;
+		}
+
+		.tab:hover {
+			border: 1px solid @bgwhite;
+		}
+	}
+
+	.about-card {
+		flex-direction: column;
+		width: 391.547px;
+
+		.about-content{
+			padding: 0 10px 10px 10px;
+			margin-bottom: 10px;
+		}
+		.about-img{
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	.footer{
+		position: static;
+		margin-top: 15px;
+	}
 }
