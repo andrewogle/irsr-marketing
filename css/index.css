@@ -181,7 +181,7 @@ header h1 {
     width: 100px;
   }
   .tabs .tab {
-    width: 236px;
+    width: 255%;
     border: 1px solid #212528;
   }
   .tabs .tab:hover {
@@ -216,17 +216,17 @@ header h1 {
     display: none;
   }
   .container {
-    max-width: 320px;
+    max-width: 375px;
   }
   .about {
-    width: 100%;
+    max-width: 375px;
   }
   .tabs {
     flex-direction: column;
-    width: 100px;
+    max-width: 375px;
   }
   .tabs .tab {
-    width: 236px;
+    max-width: 375px;
     border: 1px solid #212528;
   }
   .tabs .tab:hover {
@@ -234,7 +234,7 @@ header h1 {
   }
   .about-card {
     flex-direction: column;
-    width: 100%;
+    width: 107%;
   }
   .about-card .icons {
     float: none;
@@ -254,5 +254,6 @@ header h1 {
   .footer {
     position: static;
     margin-top: 15px;
+    max-width: 375px;
   }
 }

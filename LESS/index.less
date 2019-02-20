@@ -210,7 +210,7 @@ header {
 		flex-direction: column;
 		width: 100px;
 		.tab {
-			width: 236px;
+			width: 255%;
 			border: 1px solid @navgray;
 		}
 
@@ -255,18 +255,18 @@ header {
 		}
 	}
 	.container {
-		max-width: 320px;
+		max-width: 375px;
 	}
 
 	.about {
-		width: 100%;
+		max-width: 375px;
 	}
 
 	.tabs {
 		flex-direction: column;
-		width: 100px;
+		max-width: 375px;
 		.tab {
-			width: 236px;
+			max-width: 375px;;
 			border: 1px solid @navgray;
 		}
 
@@ -277,7 +277,8 @@ header {
 
 	.about-card {
 		flex-direction: column;
-		width: 100%;
+		width: 107%;
+		// max-width: 375px;
 		.icons {
 			float: none;
 		}
@@ -299,5 +300,6 @@ header {
 	.footer{
 		position: static;
 		margin-top: 15px;
+		max-width: 375px;
 	}
 }
