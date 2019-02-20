@@ -189,16 +189,29 @@ header {
 	}
 }
 
-@media @mobile{
+@media @mobilesmall{
+
+	.nav-container {
+		a {
+			i {
+				display: none;
+			}
+		}
+	}
 	.container {
-		max-width: 480px;
+		max-width: 320px;
+	}
+
+	.about {
+		width: 100%;
 	}
 
 	.tabs {
 		flex-direction: column;
+		width: 100px;
 		.tab {
+			width: 236px;
 			border: 1px solid @navgray;
-			width: 371.547px;
 		}
 
 		.tab:hover {
@@ -208,7 +221,69 @@ header {
 
 	.about-card {
 		flex-direction: column;
-		width: 391.547px;
+		width: 100%;
+		.icons {
+			float: none;
+		}
+		.title {
+			width: 150px;
+		}
+
+		.about-content{
+			padding: 0 10px 10px 10px;
+			margin-bottom: 10px;
+		}
+		.about-img{
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	.footer{
+		position: static;
+		margin-top: 15px;
+	}
+}
+
+@media @mobilelarge{
+	.nav-container {
+		a {
+			i {
+				display: none;
+			}
+		}
+	}
+	.container {
+		max-width: 320px;
+	}
+
+	.about {
+		width: 100%;
+	}
+
+	.tabs {
+		flex-direction: column;
+		width: 100px;
+		.tab {
+			width: 236px;
+			border: 1px solid @navgray;
+		}
+
+		.tab:hover {
+			border: 1px solid @bgwhite;
+		}
+	}
+
+	.about-card {
+		flex-direction: column;
+		width: 100%;
+		.icons {
+			float: none;
+		}
+		.title {
+			width: 150px;
+		}
 
 		.about-content{
 			padding: 0 10px 10px 10px;
