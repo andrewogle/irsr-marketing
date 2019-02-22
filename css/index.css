@@ -91,6 +91,7 @@ header h1 {
 .about-card .about-content {
   font-size: 1rem;
   color: #212528;
+  font-family: 'Roboto', sans-serif;
   line-height: 25px;
   padding-left: 0;
   margin-bottom: 25px;
@@ -114,6 +115,7 @@ header h1 {
 .about-card .about-name {
   font-size: 1rem;
   color: #212528;
+  font-family: 'Roboto', sans-serif;
   padding-left: 0;
   margin-bottom: 7px;
   font-size: 2rem;
@@ -122,6 +124,7 @@ header h1 {
 .about-card .about-role {
   font-size: 1rem;
   color: #212528;
+  font-family: 'Roboto', sans-serif;
   color: #e27689;
   padding-left: 0;
   padding-top: 0;
@@ -260,12 +263,15 @@ header h1 {
 .home hr {
   width: 50%;
 }
+.home .splash {
+  margin: 5% auto;
+}
 .home .splash-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin: 5%;
-  color: #ebf0f0;
+  text-align: center;
+  padding: 10px;
+  width: 75%;
+  margin: 0 auto;
 }
 .home .nav-container {
   display: none;
@@ -277,22 +283,31 @@ header h1 {
   display: none;
 }
 .home .splash-text {
-  font-size: 1rem;
-  color: #212528;
   font-size: 6rem;
-  margin: 15px 20px;
-  padding: 5px;
+  margin: 20px auto;
+  padding: 10px;
+  padding-top: 25px;
   color: #ebf0f0;
   border-bottom: 1px solid #ebf0f0;
   padding-bottom: 30px;
-  width: 58%;
+  width: 74%;
 }
 .home .cta-container {
+  flex-wrap: wrap;
   margin: 0 auto;
   margin-top: 10%;
+  width: 13%;
+}
+.home .sign-in {
+  margin: 0 auto;
+  background-color: green;
 }
 .home .sign-in a {
-  color: green;
+  font-size: 1rem;
+  color: #212528;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 1.35rem;
 }
 .home .sign-in:hover {
   background-color: green;
@@ -301,12 +316,12 @@ header h1 {
   color: white;
 }
 .home .button {
+  width: 150px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  border-radius: 3px;
-  width: 100px;
-  height: 40px;
+  border-radius: 2px;
+  height: 55px;
   margin: 15px;
-  border: 1px solid #ebf0f0;
+  border: 0;
   cursor: pointer;
 }
 .home .button a {
@@ -319,7 +334,7 @@ header h1 {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 .feature-card {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -329,12 +344,14 @@ header h1 {
 .feature-card .feature-card-text {
   font-size: 1rem;
   color: #212528;
+  font-family: 'Roboto', sans-serif;
   padding: 25px;
   line-height: 1.5rem;
 }
 .info-header {
   font-size: 1rem;
   color: #212528;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   margin-bottom: 25px;
 }

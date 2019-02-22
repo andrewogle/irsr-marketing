@@ -1,14 +1,16 @@
-
 .home {
   hr{
     width: 50%;
   }
+  .splash {
+    margin: 5% auto;
+  }
   .splash-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: 5%;
-    color: @bgwhite;
+    text-align: center;
+    padding: 10px;
+    width: 75%;
+    margin: 0 auto;
   }
 	.nav-container{
 		display: none;
@@ -21,23 +23,29 @@
         display: none;
     }
     .splash-text{
-		  .text-content();
         font-size: 6rem;
-        margin: 15px 20px;
-        padding: 5px;
+        margin: 20px auto;
+        padding: 10px;
+        padding-top: 25px;
         color: @bgwhite;
         border-bottom: 1px solid @bgwhite;
         padding-bottom: 30px;
-		  width: 58%;
+        width: 74%;
 	 }
 
     .cta-container {
+      flex-wrap: wrap;
       margin: 0 auto;
       margin-top: 10%;
+      width: 13%;
 	 }
 	.sign-in{
+    margin: 0 auto;
+    background-color: green;
 		a{
-			color: green;
+      .text-content();
+      color: white;
+      font-size: 1.35rem;
 		};
 	}
 	.sign-in:hover {
@@ -47,12 +55,12 @@
 		}
 	}
     .button{
-		.dropshadow();
-      border-radius: 3px;
-      width: 100px;
-      height: 40px;
+      width: 150px;
+		  .dropshadow();
+      border-radius: 2px;
+      height: 55px;
       margin: 15px;
-      border: 1px solid @bgwhite;
+      border: 0;
       a {
         text-decoration: none;
       }
