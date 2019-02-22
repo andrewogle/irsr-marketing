@@ -1,15 +1,27 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
 .home {
   hr{
     width: 50%;
   }
+  .splash-viewport{
+    height: 100%;
+    margin-top: 7%;
+  }
   .splash {
     margin: 5% auto;
+    height: 100%;
   }
   .splash-container{
     margin: 5%;
     text-align: center;
     padding: 10px;
     width: 75%;
+    height: 100%;
     margin: 0 auto;
   }
 	.nav-container{
@@ -23,24 +35,38 @@
         display: none;
     }
     .splash-text{
+      .text-content();
         font-size: 6rem;
         margin: 20px auto;
         padding: 10px;
         padding-top: 25px;
         color: @bgwhite;
         border-bottom: 1px solid @bgwhite;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         width: 74%;
 	 }
 
     .cta-container {
-      flex-wrap: wrap;
       margin: 0 auto;
       margin-top: 10%;
-      width: 13%;
-	 }
+      width: 25%;
+      height: 100%;
+   }
+
+  .info{
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.0);
+    
+		a{
+      .text-content();
+      color: white;
+      font-size: 1rem;
+		};
+  }
+
 	.sign-in{
     margin: 0 auto;
+    .dropshadow();
     background-color: green;
 		a{
       .text-content();
@@ -49,16 +75,15 @@
 		};
 	}
 	.sign-in:hover {
-		background-color: green;
+		// background-color: white;
 		a{
-			color: white;
+			// color: green;
 		}
 	}
     .button{
-      width: 150px;
-		  .dropshadow();
+      width: 60%;
       border-radius: 2px;
-      height: 55px;
+      height: 50px;
       margin: 15px;
       border: 0;
       a {
@@ -67,7 +92,10 @@
       cursor: pointer;
     }
 }
-    
+
 .splash-img{
 	background-image: url(/img/scaledsplash.png);
+}
+body > section > div > div.cta-container.auth {
+  height: 30%;
 }

@@ -260,17 +260,29 @@ header h1 {
     max-width: 375px;
   }
 }
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
 .home hr {
   width: 50%;
 }
+.home .splash-viewport {
+  height: 100%;
+  margin-top: 7%;
+}
 .home .splash {
   margin: 5% auto;
+  height: 100%;
 }
 .home .splash-container {
   margin: 5%;
   text-align: center;
   padding: 10px;
   width: 75%;
+  height: 100%;
   margin: 0 auto;
 }
 .home .nav-container {
@@ -283,23 +295,37 @@ header h1 {
   display: none;
 }
 .home .splash-text {
+  font-size: 1rem;
+  color: #212528;
+  font-family: 'Roboto', sans-serif;
   font-size: 6rem;
   margin: 20px auto;
   padding: 10px;
   padding-top: 25px;
   color: #ebf0f0;
   border-bottom: 1px solid #ebf0f0;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   width: 74%;
 }
 .home .cta-container {
-  flex-wrap: wrap;
   margin: 0 auto;
   margin-top: 10%;
-  width: 13%;
+  width: 25%;
+  height: 100%;
+}
+.home .info {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0);
+}
+.home .info a {
+  color: #212528;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 1rem;
 }
 .home .sign-in {
   margin: 0 auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   background-color: green;
 }
 .home .sign-in a {
@@ -309,17 +335,10 @@ header h1 {
   color: white;
   font-size: 1.35rem;
 }
-.home .sign-in:hover {
-  background-color: green;
-}
-.home .sign-in:hover a {
-  color: white;
-}
 .home .button {
-  width: 150px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  width: 60%;
   border-radius: 2px;
-  height: 55px;
+  height: 50px;
   margin: 15px;
   border: 0;
   cursor: pointer;
@@ -329,6 +348,9 @@ header h1 {
 }
 .splash-img {
   background-image: url(/img/scaledsplash.png);
+}
+body > section > div > div.cta-container.auth {
+  height: 30%;
 }
 .card-row {
   display: flex;
