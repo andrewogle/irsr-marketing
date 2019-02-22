@@ -1,0 +1,65 @@
+
+.home {
+  hr{
+    width: 50%;
+  }
+  .splash-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5%;
+    color: @bgwhite;
+  }
+	.nav-container{
+		display: none;
+	  }
+	.footer{
+		display: none;
+	}
+	// ^toggle these on after click
+    .footer{
+        display: none;
+    }
+    .splash-text{
+		  .text-content();
+        font-size: 6rem;
+        margin: 15px 20px;
+        padding: 5px;
+        color: @bgwhite;
+        border-bottom: 1px solid @bgwhite;
+        padding-bottom: 30px;
+		  width: 58%;
+	 }
+
+    .cta-container {
+      margin: 0 auto;
+      margin-top: 10%;
+	 }
+	.sign-in{
+		a{
+			color: green;
+		};
+	}
+	.sign-in:hover {
+		background-color: green;
+		a{
+			color: white;
+		}
+	}
+    .button{
+		.dropshadow();
+      border-radius: 3px;
+      width: 100px;
+      height: 40px;
+      margin: 15px;
+      border: 1px solid @bgwhite;
+      a {
+        text-decoration: none;
+      }
+      cursor: pointer;
+    }
+}
+    
+.splash-img{
+	background-image: url(/img/scaledsplash.png);
+}
