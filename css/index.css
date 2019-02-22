@@ -257,6 +257,16 @@ header h1 {
     max-width: 375px;
   }
 }
+.home hr {
+  width: 50%;
+}
+.home .splash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5%;
+  color: #ebf0f0;
+}
 .home .nav-container {
   display: none;
 }
@@ -273,10 +283,15 @@ header h1 {
   margin: 15px 20px;
   padding: 5px;
   color: #ebf0f0;
+  border-bottom: 1px solid #ebf0f0;
+  padding-bottom: 30px;
+  width: 58%;
 }
 .home .button {
+  text-align: center;
   width: 100px;
+  margin: 15px;
 }
-.splash {
+.splash-img {
   background-image: url(/img/scaledsplash.png);
 }
