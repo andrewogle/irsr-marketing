@@ -315,3 +315,29 @@ header h1 {
 .splash-img {
   background-image: url(/img/scaledsplash.png);
 }
+.card-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+.feature-card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  width: 45%;
+  margin: 5px;
+}
+.feature-card .feature-card-text {
+  font-size: 1rem;
+  color: #212528;
+  padding: 25px;
+  line-height: 1.5rem;
+}
+.info-header {
+  font-size: 1rem;
+  color: #212528;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.footer {
+  left: 0;
+}
