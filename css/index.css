@@ -287,10 +287,30 @@ header h1 {
   padding-bottom: 30px;
   width: 58%;
 }
+.home .cta-container {
+  margin: 0 auto;
+  margin-top: 10%;
+}
+.home .sign-in a {
+  color: green;
+}
+.home .sign-in:hover {
+  background-color: green;
+}
+.home .sign-in:hover a {
+  color: white;
+}
 .home .button {
-  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
   width: 100px;
+  height: 40px;
   margin: 15px;
+  border: 1px solid #ebf0f0;
+  cursor: pointer;
+}
+.home .button a {
+  text-decoration: none;
 }
 .splash-img {
   background-image: url(/img/scaledsplash.png);
