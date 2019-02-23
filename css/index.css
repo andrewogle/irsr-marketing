@@ -91,6 +91,7 @@ header h1 {
 .about-card .about-content {
   font-size: 1rem;
   color: #212528;
+  font-family: 'Roboto', sans-serif;
   line-height: 25px;
   padding-left: 0;
   margin-bottom: 25px;
@@ -114,6 +115,7 @@ header h1 {
 .about-card .about-name {
   font-size: 1rem;
   color: #212528;
+  font-family: 'Roboto', sans-serif;
   padding-left: 0;
   margin-bottom: 7px;
   font-size: 2rem;
@@ -122,6 +124,7 @@ header h1 {
 .about-card .about-role {
   font-size: 1rem;
   color: #212528;
+  font-family: 'Roboto', sans-serif;
   color: #e27689;
   padding-left: 0;
   padding-top: 0;
@@ -257,15 +260,25 @@ header h1 {
     max-width: 375px;
   }
 }
+html {
+  height: 100%;
+  overflow: hidden;
+}
 .home hr {
   width: 50%;
 }
+.home .splash-viewport {
+  height: 100%;
+}
+.home .splash {
+  margin: 5% auto;
+  height: 100%;
+}
 .home .splash-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 5%;
-  color: #ebf0f0;
+  text-align: center;
+  height: 100%;
+  margin: 0 auto;
+  white-space: nowrap;
 }
 .home .nav-container {
   display: none;
@@ -279,34 +292,66 @@ header h1 {
 .home .splash-text {
   font-size: 1rem;
   color: #212528;
+  font-family: 'Roboto', sans-serif;
   font-size: 6rem;
-  margin: 15px 20px;
-  padding: 5px;
+  margin: 20px auto;
+  padding: 10px;
+  padding-top: 25px;
   color: #ebf0f0;
   border-bottom: 1px solid #ebf0f0;
-  padding-bottom: 30px;
-  width: 58%;
+  padding-bottom: 20px;
+  width: 74%;
 }
 .home .cta-container {
-  margin: 0 auto;
+  justify-content: center;
   margin-top: 10%;
 }
-.home .sign-in a {
-  color: green;
+.home .cta-container .learn {
+  margin: 0;
 }
-.home .sign-in:hover {
+.home .info {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0);
+}
+.home .info a {
+  color: #212528;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+.home .sign-in {
+  margin: 0 auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   background-color: green;
 }
-.home .sign-in:hover a {
+.home .sign-in a {
+  font-size: 1rem;
+  color: #212528;
+  font-family: 'Roboto', sans-serif;
   color: white;
+  font-size: 1.35rem;
+}
+.home .sign-in:hover {
+  background-color: white;
+}
+.home .learn p {
+  font-size: 1rem;
+  color: #212528;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #ebf0f0;
+  padding-top: 5px;
+  margin-bottom: 10px;
+}
+.home .learn .button {
+  margin: 0;
 }
 .home .button {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  border-radius: 3px;
-  width: 100px;
-  height: 40px;
+  width: 15%;
+  border-radius: 2px;
+  height: 50px;
   margin: 15px;
-  border: 1px solid #ebf0f0;
+  border: 0;
   cursor: pointer;
 }
 .home .button a {
@@ -315,11 +360,19 @@ header h1 {
 .splash-img {
   background-image: url(/img/scaledsplash.png);
 }
+body > section > div > div.cta-container.learn {
+  margin: 0;
+  margin-top: 40%;
+}
+body > section > div > div.cta-container.learn > button {
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 .card-row {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 .feature-card {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -329,12 +382,14 @@ header h1 {
 .feature-card .feature-card-text {
   font-size: 1rem;
   color: #212528;
+  font-family: 'Roboto', sans-serif;
   padding: 25px;
   line-height: 1.5rem;
 }
 .info-header {
   font-size: 1rem;
   color: #212528;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   margin-bottom: 25px;
 }

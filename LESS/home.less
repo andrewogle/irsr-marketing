@@ -1,14 +1,23 @@
-
+html {
+  height: 100%;
+  overflow: hidden;
+}
 .home {
   hr{
     width: 50%;
   }
+  .splash-viewport{
+    height: 100%;
+  }
+  .splash {
+    margin: 5% auto;
+    height: 100%;
+  }
   .splash-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 5%;
-    color: @bgwhite;
+    text-align: center;
+    height: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
   }
 	.nav-container{
 		display: none;
@@ -21,45 +30,85 @@
         display: none;
     }
     .splash-text{
-		  .text-content();
+      .text-content();
         font-size: 6rem;
-        margin: 15px 20px;
-        padding: 5px;
+        margin: 20px auto;
+        padding: 10px;
+        padding-top: 25px;
         color: @bgwhite;
         border-bottom: 1px solid @bgwhite;
-        padding-bottom: 30px;
-		  width: 58%;
+        padding-bottom: 20px;
+        width: 74%;
 	 }
 
     .cta-container {
-      margin: 0 auto;
+      justify-content: center;
       margin-top: 10%;
-	 }
-	.sign-in{
+   }
+   .cta-container .learn {
+      margin: 0;
+   }
+
+  .info{
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.0);
+    
 		a{
-			color: green;
+      .text-content();
+      color: white;
+      font-size: 1rem;
+		};
+  }
+
+	.sign-in{
+    margin: 0 auto;
+    .dropshadow();
+    background-color: green;
+		a{
+      .text-content();
+      color: white;
+      font-size: 1.35rem;
 		};
 	}
 	.sign-in:hover {
-		background-color: green;
-		a{
-			color: white;
-		}
-	}
+		background-color: white;
+  }
+  
+  .learn{ 
+    p {
+      .text-content();
+      text-align: center;
+      color: @bgwhite;
+      padding-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      margin: 0;
+    }
+  }
+
     .button{
-		.dropshadow();
-      border-radius: 3px;
-      width: 100px;
-      height: 40px;
+      width: 15%;
+      border-radius: 2px;
+      height: 50px;
       margin: 15px;
-      border: 1px solid @bgwhite;
+      border: 0;
       a {
         text-decoration: none;
       }
       cursor: pointer;
     }
 }
-    
+
 .splash-img{
 	background-image: url(/img/scaledsplash.png);
+}
+body > section > div > div.cta-container.learn {
+  margin: 0;
+  margin-top: 40%;
+}
+body > section > div > div.cta-container.learn > button {
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.4)
 }
