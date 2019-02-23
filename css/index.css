@@ -377,18 +377,31 @@ body > section > div > div.cta-container.learn > button {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .feature-card {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  width: 45%;
+  display: flex;
+  height: 220px;
+  width: 40%;
+  background-color: #ebf0f0;
+  padding: 10px;
   margin: 5px;
+}
+.feature-card .feature-card-header {
+  font-size: 1rem;
+  color: #212528;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 7px;
 }
 .feature-card .feature-card-text {
   font-size: 1rem;
   color: #212528;
   font-family: 'Roboto', sans-serif;
-  padding: 25px;
+  padding: 15px;
+  padding-top: 0;
   line-height: 1.5rem;
 }
 .info-header {
@@ -396,7 +409,14 @@ body > section > div > div.cta-container.learn > button {
   color: #212528;
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  margin-bottom: 25px;
+}
+.feature-card-img {
+  height: 100%;
+  min-width: 150px;
+}
+body > div > header > h1 {
+  margin-bottom: 10px;
+  color: white;
 }
 .footer {
   left: 0;

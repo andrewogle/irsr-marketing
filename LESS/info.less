@@ -2,16 +2,27 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .feature-card{
     .dropshadow();
-    width: 45%;
+    display: flex;
+    height: 220px;
+    width: 40%;
+    background-color: @bgwhite;
+    padding: 10px;
     margin: 5px;
+    .feature-card-header{
+        .text-content();
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 7px;
+    }
     .feature-card-text{
         .text-content();
-        padding: 25px;
+        padding: 15px;
+        padding-top: 0;
         line-height: 1.5rem;
     }
 }
@@ -19,5 +30,14 @@
 .info-header{
     .text-content();
     text-align: center;
-    margin-bottom: 25px;
+}
+
+.feature-card-img{
+    height: 100%;
+    min-width: 150px;
+}
+
+body > div > header > h1 {
+    margin-bottom: 10px;
+    color: white;
 }
