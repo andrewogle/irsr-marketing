@@ -1,8 +1,6 @@
 html {
   height: 100%;
-}
-body {
-  height: 100%;
+  overflow: hidden;
 }
 .home {
   hr{
@@ -10,19 +8,16 @@ body {
   }
   .splash-viewport{
     height: 100%;
-    margin-top: 7%;
   }
   .splash {
     margin: 5% auto;
     height: 100%;
   }
   .splash-container{
-    margin: 5%;
     text-align: center;
-    padding: 10px;
-    width: 75%;
     height: 100%;
     margin: 0 auto;
+    white-space: nowrap;
   }
 	.nav-container{
 		display: none;
@@ -47,10 +42,11 @@ body {
 	 }
 
     .cta-container {
-      margin: 0 auto;
+      justify-content: center;
       margin-top: 10%;
-      width: 25%;
-      height: 100%;
+   }
+   .cta-container .learn {
+      margin: 0;
    }
 
   .info{
@@ -75,13 +71,25 @@ body {
 		};
 	}
 	.sign-in:hover {
-		// background-color: white;
-		a{
-			// color: green;
-		}
-	}
+		background-color: white;
+  }
+  
+  .learn{ 
+    p {
+      .text-content();
+      text-align: center;
+      color: @bgwhite;
+      padding-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      margin: 0;
+    }
+  }
+
     .button{
-      width: 60%;
+      width: 15%;
       border-radius: 2px;
       height: 50px;
       margin: 15px;
@@ -96,6 +104,11 @@ body {
 .splash-img{
 	background-image: url(/img/scaledsplash.png);
 }
-body > section > div > div.cta-container.auth {
-  height: 30%;
+body > section > div > div.cta-container.learn {
+  margin: 0;
+  margin-top: 40%;
+}
+body > section > div > div.cta-container.learn > button {
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.4)
 }
